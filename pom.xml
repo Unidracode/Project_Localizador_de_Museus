@@ -35,11 +35,17 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- For tests -->
+        <!-- For actuator -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- For tests -->
+        <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-test</artifactId>
+          <scope>test</scope>
         </dependency>
 
     <dependency>
