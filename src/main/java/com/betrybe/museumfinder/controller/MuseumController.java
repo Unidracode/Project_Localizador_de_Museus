@@ -60,4 +60,16 @@ public class MuseumController {
     MuseumDto museumDto = ModelDtoConverter.modelToDto(museum);
     return museumDto;
   }
+
+  /**
+   * MuseumController.
+   */
+
+  @GetMapping("/{id}")
+  @ResponseStatus(HttpStatus.OK)
+  public MuseumDto getMuseum(@RequestParam Long id) {
+    Museum museum = museumService.getMuseum(id);
+    MuseumDto museumDto = ModelDtoConverter.modelToDto(museum);
+    return museumDto;
+  }
 }
